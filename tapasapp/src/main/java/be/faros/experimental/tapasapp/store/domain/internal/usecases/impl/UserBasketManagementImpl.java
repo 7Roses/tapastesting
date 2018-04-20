@@ -60,7 +60,7 @@ public class UserBasketManagementImpl implements UserBasketManagement {
 
       final BigDecimal subTotal = tapasPriceInfo.getPrice().multiply(BigDecimal.valueOf(tapasOrder.getAmount()));
 
-      sum.add(subTotal);
+      sum = sum.add(subTotal);
     }
 
     return sum;

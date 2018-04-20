@@ -3,6 +3,7 @@ package be.faros.experimental.tapasapp.store.domain.internal.entity;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -17,7 +18,7 @@ public class BasketEntity {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
 
-  @OneToMany(targetEntity=TapasOrderEntity.class, mappedBy="basket", fetch=FetchType.EAGER)
+  @OneToMany(targetEntity=TapasOrderEntity.class, mappedBy="basket", fetch=FetchType.EAGER, cascade = CascadeType.ALL)
   private List<TapasOrderEntity> tapasOrders = new ArrayList<>();
 
   public int getId() {

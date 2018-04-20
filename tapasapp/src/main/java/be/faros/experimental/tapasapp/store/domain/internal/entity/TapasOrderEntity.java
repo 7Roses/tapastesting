@@ -1,9 +1,11 @@
 package be.faros.experimental.tapasapp.store.domain.internal.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
@@ -12,9 +14,12 @@ public class TapasOrderEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
+  @Column
   private String tapasId;
+  @Column
   private long amount;
   @ManyToOne
+  @JoinColumn(name = "basket_id", nullable = false)
   private BasketEntity basket;
 
   public int getId() {

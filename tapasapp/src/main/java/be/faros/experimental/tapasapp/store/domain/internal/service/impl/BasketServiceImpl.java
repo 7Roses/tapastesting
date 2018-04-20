@@ -38,6 +38,7 @@ public class BasketServiceImpl implements BasketService {
       final TapasOrderEntity newTapasOrderEntity = new TapasOrderEntity();
       newTapasOrderEntity.setTapasId(tapasId);
       newTapasOrderEntity.setAmount(amount);
+      newTapasOrderEntity.setBasket(basket);
       basket.getTapasOrders().add(newTapasOrderEntity);
     }
   }

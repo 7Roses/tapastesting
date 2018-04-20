@@ -3,10 +3,14 @@ package be.faros.experimental.tapasapp.store.controller;
 import be.faros.experimental.tapasapp.store.domain.usecases.UserBasketManagement;
 import be.faros.experimental.tapasapp.store.domain.usecases.dto.TapasOrder;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.transaction.Transactional;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,11 +26,10 @@ public class UserBasketManagementController {
 
   private UserBasketManagement userBasketManagement;
 
-  @ResponseStatus(HttpStatus.BAD_REQUEST)
   @ExceptionHandler(IllegalArgumentException.class)
-  @ResponseBody
-  public String handleBadRequest(HttpServletRequest req, Exception ex) {
-    return ex.getMessage();
+  public ResponseEntity<Object> handleBadRequest(Exception ex) {
+      final ApiError apiError = new ApiError(HttpStatus.BAD_REQUEST, ex.getLocalizedMessage());
+      return new ResponseEntity<>(apiError, new HttpHeaders(), apiError.getStatus());
   }
 
   public UserBasketManagementController(UserBasketManagement userBasketManagement) {
