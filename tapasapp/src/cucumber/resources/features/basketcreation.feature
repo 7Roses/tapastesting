@@ -28,3 +28,5 @@ Feature: A new empty basket can be created
     And the user adds 5 Tapas with id 3 to the Basket with id 1
     And the user adds 3 Tapas with id 5 to the Basket with id 1
     Then the Total Cost for all the Tapas in the Basket with id 1 equals 24
+    When the user adds -3 Tapas with id 3 to the Basket with id 1
+    Then the Total Cost for all the Tapas in the Basket with id 1 equals 15

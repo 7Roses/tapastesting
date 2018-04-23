@@ -16,7 +16,7 @@ public class BasketCucumberTest extends BaseCucumberTest {
     userBasketManagement.createNewBasket();
   }
 
-  @When("^the user adds (\\d+) Tapas with id (\\d+) to the Basket with id (\\d+)$")
+  @When("^the user adds (-?\\d+) Tapas with id (\\d+) to the Basket with id (\\d+)$")
   public void theUserAddsTapasWithIdToTheBasketWithId(int numberTapas, String tapasId, int basketId) {
     userBasketManagement.addNewTapasOrderToBasket(basketId, new TapasOrder(tapasId, numberTapas));
   }
