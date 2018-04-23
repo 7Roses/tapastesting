@@ -28,7 +28,7 @@ public class BasketServiceImpl implements BasketService {
   }
 
   @Override
-  public void addTapasOrder(BasketEntity basket, String tapasId, long amount) {
+  public void changeTapasOrder(BasketEntity basket, String tapasId, long amount) {
     final Optional<TapasOrderEntity> tapasOrderEntity = basket.getTapasOrder(tapasId);
 
     if (tapasOrderEntity.isPresent()) {

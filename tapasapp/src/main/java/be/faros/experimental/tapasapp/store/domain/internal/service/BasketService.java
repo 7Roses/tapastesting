@@ -8,6 +8,6 @@ public interface BasketService {
 
   BasketEntity getExpectedBasket(int basketId);
 
-  void addTapasOrder(BasketEntity basket, String tapasId, long amount);
+  void changeTapasOrder(BasketEntity basket, String tapasId, long amount);
 
 }
