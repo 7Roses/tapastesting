@@ -10,10 +10,6 @@ public class TapasOrder {
       throw new IllegalArgumentException("A tapas ID is required");
     }
 
-    if(amount < 0) {
-      throw new IllegalArgumentException("Can't have a negative amount of tapas");
-    }
-
     this.tapasId = tapasId;
     this.amount = amount;
   }

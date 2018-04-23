@@ -10,7 +10,7 @@ public interface UserBasketManagement {
 
   List<TapasOrder> retrieveListOfAllTapasOrdersInBasket(int basketId);
 
-  void addNewTapasOrderToBasket(int basketId, TapasOrder tapasOrder);
+  void changeTapasOrderInBasket(int basketId, TapasOrder tapasOrder);
 
   BigDecimal calculateCostForBasket(int basketId);
 

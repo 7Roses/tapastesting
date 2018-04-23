@@ -39,14 +39,14 @@ public class UserBasketManagementImpl implements UserBasketManagement {
   }
 
   @Override
-  public void addNewTapasOrderToBasket(int basketId, TapasOrder tapasOrder) {
+  public void changeTapasOrderInBasket(int basketId, TapasOrder tapasOrder) {
     if (catalogueSearching.getTapas(tapasOrder.getTapasId()) == null) {
       throw new IllegalArgumentException("No tapas found for this ID!");
     }
 
     final BasketEntity basket = basketService.getExpectedBasket(basketId);
 
-    basketService.addTapasOrder(basket, tapasOrder.getTapasId(), tapasOrder.getAmount());
+    basketService.changeTapasOrder(basket, tapasOrder.getTapasId(), tapasOrder.getAmount());
   }
 
   @Override
