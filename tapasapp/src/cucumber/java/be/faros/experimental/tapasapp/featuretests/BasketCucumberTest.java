@@ -18,7 +18,7 @@ public class BasketCucumberTest extends BaseCucumberTest {
 
   @When("^the user adds (-?\\d+) Tapas with id (\\d+) to the Basket with id (\\d+)$")
   public void theUserAddsTapasWithIdToTheBasketWithId(int numberTapas, String tapasId, int basketId) {
-    userBasketManagement.addNewTapasOrderToBasket(basketId, new TapasOrder(tapasId, numberTapas));
+    userBasketManagement.changeTapasOrderInBasket(basketId, new TapasOrder(tapasId, numberTapas));
   }
 
   @Then("^the total number of items in the Basket with id (\\d+) equals (\\d+)$")
