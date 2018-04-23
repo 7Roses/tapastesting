@@ -33,7 +33,13 @@ public class BasketServiceImpl implements BasketService {
 
     if (tapasOrderEntity.isPresent()) {
       final TapasOrderEntity foundTapasOrderEntity = tapasOrderEntity.get();
-      foundTapasOrderEntity.setAmount(amount);
+      foundTapasOrderEntity.setAmount(foundTapasOrderEntity.getAmount() + amount);
+
+      if(foundTapasOrderEntity.getAmount() < 0) {
+        throw new IllegalArgumentException("Can't have a negative amount of Tapas");
+      } else if(foundTapasOrderEntity.getAmount() == 0) {
+        basket.getTapasOrders().remove(tapasOrderEntity);
+      }
     } else {
       final TapasOrderEntity newTapasOrderEntity = new TapasOrderEntity();
       newTapasOrderEntity.setTapasId(tapasId);
