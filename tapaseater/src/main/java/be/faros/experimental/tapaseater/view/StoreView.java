@@ -1,4 +1,4 @@
-package be.faros.experimental.tapaseater.gateway.ui.view;
+package be.faros.experimental.tapaseater.view;
 
 import be.faros.experimental.tapaseater.presenter.TapasEaterPresenter;
 import java.text.NumberFormat;
