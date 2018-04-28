@@ -6,9 +6,9 @@ Feature: A new empty basket can be created and filled with Tapas
 
   # TODO 05 Uncomment the first scenario, and try running the CucumberTest.java file as a Test (it will be ignored, so let's correct this in the next step!)
   #
-  Scenario: Client creates a new Basket, and verifies it's empty
-    When the user creates a new Basket
-    Then the total number of items in the Basket with id 1 equals 0
+  #Scenario: Client creates a new Basket, and verifies it's empty
+  #  When the user creates a new Basket
+  #  Then the total number of items in the Basket with id 1 equals 0
 
   # TODO 07 Add a scenario where we verify whether the Client can add a Tapas to his Basket. You can just add it under the previous scenario.
   # We want our test to verify that:
