@@ -4,7 +4,7 @@
 
 Feature: A new empty basket can be created and filled with Tapas
 
-  # TODO 05 Uncomment the first scenario, and try running the CucumberTest.java file as a Test (it will fail so, let's correct this in the next step!)
+  # TODO 05 Uncomment the first scenario, and try running the CucumberTest.java file as a Test (it will be ignored, so let's correct this in the next step!)
   #
   Scenario: Client creates a new Basket, and verifies it's empty
     When the user creates a new Basket
