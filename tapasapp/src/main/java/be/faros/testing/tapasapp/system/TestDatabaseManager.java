@@ -1,4 +1,4 @@
-package be.faros.experimental.tapasapp.system;
+package be.faros.testing.tapasapp.system;
 
 import java.sql.SQLException;
 import javax.sql.DataSource;
