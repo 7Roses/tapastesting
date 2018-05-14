@@ -1,4 +1,4 @@
-package be.faros.experimental.tapasapp;
+package be.faros.testing.tapasapp;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;

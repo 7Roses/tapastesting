@@ -1,9 +1,9 @@
-package be.faros.experimental.tapasapp.featuretests;
+package be.faros.testing.tapasapp.featuretests;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import be.faros.experimental.tapasapp.BaseCucumberTest;
-import be.faros.experimental.tapasapp.store.domain.usecases.dto.TapasOrder;
+import be.faros.testing.tapasapp.BaseCucumberTest;
+import be.faros.testing.tapasapp.store.domain.usecases.dto.TapasOrder;
 import cucumber.api.java.After;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;

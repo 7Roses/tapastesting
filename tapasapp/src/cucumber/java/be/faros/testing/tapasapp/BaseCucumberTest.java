@@ -1,10 +1,10 @@
-package be.faros.experimental.tapasapp;
+package be.faros.testing.tapasapp;
 
 import static org.junit.Assert.fail;
 
-import be.faros.experimental.tapasapp.catalogue.domain.usecases.CatalogueSearching;
-import be.faros.experimental.tapasapp.store.domain.usecases.UserBasketManagement;
-import be.faros.experimental.tapasapp.system.TestDatabaseManager;
+import be.faros.testing.tapasapp.catalogue.domain.usecases.CatalogueSearching;
+import be.faros.testing.tapasapp.store.domain.usecases.UserBasketManagement;
+import be.faros.testing.tapasapp.system.TestDatabaseManager;
 import java.sql.SQLException;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
