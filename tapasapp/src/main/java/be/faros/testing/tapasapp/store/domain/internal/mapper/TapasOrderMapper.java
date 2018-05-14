@@ -2,7 +2,6 @@ package be.faros.testing.tapasapp.store.domain.internal.mapper;
 
 import be.faros.testing.tapasapp.store.domain.internal.entity.TapasOrderEntity;
 import be.faros.testing.tapasapp.store.domain.usecases.dto.TapasOrder;
-import be.faros.testing.tapasapp.store.domain.usecases.dto.TapasOrder;
 import java.util.List;
 import java.util.stream.Collectors;
 

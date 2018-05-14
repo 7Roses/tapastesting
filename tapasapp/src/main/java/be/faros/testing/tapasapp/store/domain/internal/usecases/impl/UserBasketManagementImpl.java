@@ -8,14 +8,6 @@ import be.faros.testing.tapasapp.store.domain.internal.mapper.TapasOrderMapper;
 import be.faros.testing.tapasapp.store.domain.internal.service.BasketService;
 import be.faros.testing.tapasapp.store.domain.usecases.UserBasketManagement;
 import be.faros.testing.tapasapp.store.domain.usecases.dto.TapasOrder;
-import be.faros.testing.tapasapp.catalogue.domain.usecases.CatalogueSearching;
-import be.faros.testing.tapasapp.catalogue.domain.usecases.dto.Tapas;
-import be.faros.testing.tapasapp.store.domain.internal.entity.BasketEntity;
-import be.faros.testing.tapasapp.store.domain.internal.entity.TapasOrderEntity;
-import be.faros.testing.tapasapp.store.domain.internal.mapper.TapasOrderMapper;
-import be.faros.testing.tapasapp.store.domain.internal.service.BasketService;
-import be.faros.testing.tapasapp.store.domain.usecases.UserBasketManagement;
-import be.faros.testing.tapasapp.store.domain.usecases.dto.TapasOrder;
 import java.math.BigDecimal;
 import java.util.List;
 import javax.transaction.Transactional;
@@ -63,7 +55,7 @@ public class UserBasketManagementImpl implements UserBasketManagement {
 
     BigDecimal sum = BigDecimal.ZERO;
 
-    for(TapasOrderEntity tapasOrder : basket.getTapasOrders()) {
+    for (TapasOrderEntity tapasOrder : basket.getTapasOrders()) {
       final Tapas tapasPriceInfo = catalogueSearching.getTapas(tapasOrder.getTapasId());
 
       final BigDecimal subTotal = tapasPriceInfo.getPrice().multiply(BigDecimal.valueOf(tapasOrder.getAmount()));

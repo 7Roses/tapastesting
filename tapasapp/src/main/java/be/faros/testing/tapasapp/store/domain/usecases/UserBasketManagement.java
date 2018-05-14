@@ -1,7 +1,6 @@
 package be.faros.testing.tapasapp.store.domain.usecases;
 
 import be.faros.testing.tapasapp.store.domain.usecases.dto.TapasOrder;
-import be.faros.testing.tapasapp.store.domain.usecases.dto.TapasOrder;
 import java.math.BigDecimal;
 import java.util.List;
 
