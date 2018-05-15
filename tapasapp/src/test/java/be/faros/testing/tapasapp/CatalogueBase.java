@@ -1,8 +1,8 @@
 package be.faros.testing.tapasapp;
 
-import be.faros.experimental.tapasapp.catalogue.controller.CatalogueController;
-import be.faros.experimental.tapasapp.catalogue.domain.usecases.CatalogueSearching;
-import be.faros.experimental.tapasapp.catalogue.domain.usecases.dto.Tapas;
+import be.faros.testing.tapasapp.catalogue.controller.CatalogueController;
+import be.faros.testing.tapasapp.catalogue.domain.usecases.CatalogueSearching;
+import be.faros.testing.tapasapp.catalogue.domain.usecases.dto.Tapas;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import org.junit.Before;
 import org.junit.runner.RunWith;
