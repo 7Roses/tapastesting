@@ -11,10 +11,7 @@ Contract.make{
     response{
         status 200
         headers {
-            header('Content-Type': value(
-                    producer(regex('application/json.*')),
-                    consumer('application/json')
-            ))
+            contentType applicationJson()
         }
         body (
                 //$(anyNumber()) //doesn't match pattern "-?d*(.d+)?"
