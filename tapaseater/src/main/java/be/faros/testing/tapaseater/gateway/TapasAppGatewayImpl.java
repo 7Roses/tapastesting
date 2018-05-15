@@ -48,7 +48,8 @@ public class TapasAppGatewayImpl implements TapasAppGateway {
   }
 
   /*
-    TODO step2: Write the missing implementation (the gateway that communicates with the producer endpoint)
+    TODO step2: at this moment you would write the missing implementation communicating with the producers endpoint.
+      Don't worry which we already did this for you so you now run the TapasEaterTests.java and see it fail. Why does it fail?
    */
   @Override
   public List<Tapas> getAvailableTapas() {
