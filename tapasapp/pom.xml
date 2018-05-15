@@ -109,7 +109,7 @@
 				<version>${spring-cloud-contract.version}</version>
 				<extensions>true</extensions> <!-- Maven related: A plugin defined with extensions=true usually defines it's own life cycle or packaging types like the maven-bundle-plugin which makes it possible to define a <packaging>bundle</packaging> or Maven Tycho defines packaging types: <packaging>eclipse-plugin</packaging>. -->
 				<configuration>
-					<packageWithBaseClasses>be.faros</packageWithBaseClasses>
+					<packageWithBaseClasses>be.faros.testing.tapasapp</packageWithBaseClasses>
 				</configuration>
 			</plugin>
 		</plugins>
