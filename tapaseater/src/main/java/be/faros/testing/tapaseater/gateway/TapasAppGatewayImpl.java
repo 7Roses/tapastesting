@@ -52,8 +52,7 @@ public class TapasAppGatewayImpl implements TapasAppGateway {
    */
   @Override
   public List<Tapas> getAvailableTapas() {
-    return restTemplate.exchange(BASEPATH + "/tapas", HttpMethod.GET, null, new ParameterizedTypeReference<List<Tapas>>() {
-    }).getBody();
+    return null;
   }
 
   @Override
