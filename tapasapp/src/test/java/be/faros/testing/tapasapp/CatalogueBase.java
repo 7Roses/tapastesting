@@ -38,4 +38,9 @@ public abstract class CatalogueBase {
             TODO step8: use Mockito to return the list of tapas above when calling catalogueSearching.getAllTapas()
          */
     }
+
+    /*
+        TODO step9: run the (generated) API test on producer side
+            $mvn test
+    */
 }
