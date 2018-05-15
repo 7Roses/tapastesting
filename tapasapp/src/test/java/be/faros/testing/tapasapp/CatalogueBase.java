@@ -33,6 +33,9 @@ public abstract class CatalogueBase {
         List<Tapas> tapas = Arrays.asList(new Tapas("0", "All i oli", new BigDecimal(1.5)),
                                           new Tapas("1", "Banderillas", new BigDecimal(3)));
 
+        /*
+            TODO step8: use Mockito to return the list of tapas above when calling catalogueSearching.getAllTapas()
+         */
         Mockito.when(catalogueSearching.getAllTapas())
                 .thenReturn(tapas);
     }
