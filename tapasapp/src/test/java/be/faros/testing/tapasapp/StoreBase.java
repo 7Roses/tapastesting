@@ -1,4 +1,4 @@
-package be.faros;
+package be.faros.testing.tapasapp;
 
 import be.faros.testing.tapasapp.TapasApp;
 import be.faros.testing.tapasapp.store.controller.UserBasketManagementController;
