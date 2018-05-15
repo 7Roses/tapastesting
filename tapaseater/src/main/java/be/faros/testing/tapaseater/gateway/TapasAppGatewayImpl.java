@@ -47,6 +47,9 @@ public class TapasAppGatewayImpl implements TapasAppGateway {
     });
   }
 
+  /*
+    TODO step2: Write the missing implementation (the gateway that communicates with the producer endpoint)
+   */
   @Override
   public List<Tapas> getAvailableTapas() {
     return restTemplate.exchange(BASEPATH + "/tapas", HttpMethod.GET, null, new ParameterizedTypeReference<List<Tapas>>() {
