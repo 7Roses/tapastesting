@@ -20,7 +20,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 */
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = TapasEater.class)
-@AutoConfigureStubRunner(ids = {"be.contracts.be.faros.experimental:tapasapp:+:stubs:8080"}, stubsMode = StubRunnerProperties.StubsMode.LOCAL)
 public class TapasEaterTests {
 
         @Autowired
@@ -36,7 +35,6 @@ public class TapasEaterTests {
                 - retrieve the list of all available tapas using the tapasEaterPresenter.listAvailableTapas()
                 - Assert that it returns 2 items
          */
-            List<Tapas> tapas = tapasEaterPresenter.listAvailableTapas();
-            assertThat(tapas.size()).isEqualTo(2);
+
         }
 }
