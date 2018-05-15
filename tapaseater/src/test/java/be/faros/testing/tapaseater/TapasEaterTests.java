@@ -15,8 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 /*
     TODO step6: Annotate your test class with @AutoConfigureStubRunner
-        In the annotation, provide the group-id and artifact-id for the Stub Runner to download the stubs of your collaborators
-        Because we’re working with a local maven repo set stubsMode to StubRunnerProperties.StubsMode.LOCAL
+        + set the correct stubsMode & ids
 */
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = TapasEater.class)
